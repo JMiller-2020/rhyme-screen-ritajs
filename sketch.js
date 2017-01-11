@@ -51,7 +51,7 @@ function rhymeWord() {
   var word = this.html();
   var rhymes = lexicon.rhymes(word);
   if(rhymes && rhymes.length > 0) {
-    console.log(word + ": " + rhymes);
+    // console.log(word + ": " + rhymes);
     this.html(rhymes[Math.floor(random(rhymes.length))]);
   }
 }
